@@ -5,7 +5,7 @@ from io import BytesIO
 
 # === NASA APOD API ===
 API_URL = "https://api.nasa.gov/planetary/apod"
-API_KEY = "eG6R1CynmBgOLFdCvMEi5s0oAeTRjXNEAYlqUifW"  # Replace with your own API key from https://api.nasa.gov/
+API_KEY = "eG6R1CynmBgOLFdCvMEi5s0oAeTRjXNEAYlqUifW" 
 
 def fetch_apod(date=None):
     """Fetch Astronomy Picture of the Day (APOD) data from NASA API"""
@@ -53,4 +53,5 @@ if not date:
     st.image(img, caption=title, use_container_width=True)
 
     st.write(explanation)
+
 
